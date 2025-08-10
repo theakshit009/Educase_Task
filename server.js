@@ -8,6 +8,10 @@ const app = express()
 
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.send("School Management API is running 🚀");
+});
+
 app.use('/', schoolRouter)
 
 const PORT = process.env.PORT || 4041
