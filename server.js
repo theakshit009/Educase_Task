@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 
 app.get("/", (req, res) => {
-  res.send("School Management API is running 🚀");
+  res.send("School Management API is running perfectly 🚀");
 });
 
 app.use('/', schoolRouter)
