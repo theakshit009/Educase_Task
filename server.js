@@ -16,7 +16,7 @@ app.use('/', schoolRouter)
 
 const PORT = process.env.PORT || 4041
 
-app.listen(PORT, () => {
+app.listen(PORT,"0.0.0.0", () => {
     console.log(`Server is running on ${PORT}`)
 })
 
